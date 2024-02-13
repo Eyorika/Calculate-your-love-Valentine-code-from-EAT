@@ -1,0 +1,76 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-image: url("./hearts.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content-box {
+    width: 400px;
+    height: 500px;
+    background: radial-gradient(#f1d5f0af  10% 25%, #ea12f185 50%);
+    padding: 20px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+
+#calculate {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(236, 100, 122);
+    color: white;
+    font-size: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 5px solid rgba(99, 81, 81, 0.562);
+    border-radius: 10px 20%;
+}
+input{
+    width:  150px;
+    height: 30px;
+    padding: 0 40px;
+    background-color: transparent;
+    border-radius: 10px 5px 2px 5px;
+    font-size: 1.2rem;
+    outline: none;
+    line-height: 30px;
+    border-top: 11px solid rgb(255, 128, 36);
+    border: 1px solid black;
+    z-index: 111;
+    transition: 0.1s ease;
+}
+label{
+    text-transform: uppercase;
+    cursor: text;
+}
+input:focus,
+input:valid{
+    color: aqua;
+    border: 2px solid green;
+}
+input:focus + label,
+input:valid + label{
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    transform: translate(-15px, -16px);
+    z-index: 111;
+}
+#result-percentage {
+    font-size: 50px;
+    color: black;
+}
+#calculate:hover {
+    background-color: #f33c04ee;
+    color: white;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(182, 147, 147);
+    border-top: 3px solid rgba(113, 116, 113, 0.74);
+    cursor:progress;
+    transform: translateY(#fff 10px, -7px);
+
+}
